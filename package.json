@@ -1,0 +1,11 @@
+{
+  "name": "krish-vfms",
+  "version": "1.0.0",
+  "scripts": {
+    "sass:watch": "sass --watch --no-source-map HTML-2/assets/sass:HTML-2/assets/css",
+    "sass:build": "sass --no-source-map HTML-2/assets/sass:HTML-2/assets/css"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}

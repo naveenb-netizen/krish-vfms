@@ -1,0 +1,319 @@
+/*
+Template Name: Pamar
+Template URL: https://themehour.com/html/pamar/
+Description: Plumbing & Repair Service HTML Template
+Author: themehour
+Author URI: https://themeforest.net/importr/themehour
+Version: 1.0.0
+*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+
+01. Theme Base
+    1.1. Mixin
+    1.2. Function
+    1.3. Variable
+    1.4. Typography
+    1.5. Wordpress Default
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slider
+    2.5. Mobile Menu
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+    
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Pagination
+    4.6. Blog
+    4.7. Comments
+    4.8. Hero Area
+    4.9. Error    
+    4.00. Popup Search
+    4.00. Popup Side Menu
+    4.00. Wocommerce
+    4.00. Products
+    4.00. Cart
+    4.00. Checkout
+    4.00. Wishlist
+    4.00. Contact
+    4.00. About
+    4.00. Team
+    4.00. Testimonial
+    4.00. Counter
+    4.00. Blog
+    4.00. Brand
+    4.00. Simple Sections
+    4.00. Why
+    4.00. Faq
+    4.00. Service
+    4.00. Process
+    4.00. Pricing
+    4.00. Feature
+    4.00. Project
+    4.00. Category
+    4.00. Color Scheme
+    4.00. CTA
+    4.00. Appointment
+    4.00. Video
+    4.00. Tab Menu
+    4.00. Schedule
+
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+
+
+/*=================================
+   01. Theme Base
+==================================*/
+/*------------------- 1.1. Mixin -------------------*/
+@use 'base/mixin';
+
+/*------------------- 1.2. Function -------------------*/
+@use 'base/function';
+
+/*------------------- 1.3. Variable-------------------*/
+@use 'base/variable';
+
+/*------------------- 1.4. Typography -------------------*/
+@use 'base/typography';
+
+/*------------------- 1.5. Wordpress Default -------------------*/
+@use 'base/wpdefault';
+
+
+/*=================================
+    02. Reset
+==================================*/
+/*------------------- 2.1. Container -------------------*/
+@use 'reset/container';
+
+/*------------------- 2.2. Grid -------------------*/
+@use 'reset/grid';
+
+/*------------------- 2.3. Input -------------------*/
+@use 'reset/input';
+
+/*------------------- 2.4. Slick Slider -------------------*/
+@use 'reset/slider';
+
+/*------------------- 2.5. Mobile Menu -------------------*/
+@use 'reset/mobilemenu';
+
+
+/*=================================
+    03. Utilities
+==================================*/
+/*------------------- 3.1. Preloader -------------------*/
+@use 'utilities/preloader';
+
+/*------------------- 3.2. Buttons -------------------*/
+@use 'utilities/btns';
+
+/*------------------- 3.3. Titles -------------------*/
+@use 'utilities/titles';
+
+/*------------------- 3.4. Common -------------------*/
+@use 'utilities/common';
+
+/*------------------- 3.6. Font -------------------*/
+@use 'utilities/font';
+
+/*------------------- 3.7. Background -------------------*/
+@use 'utilities/background';
+
+/*------------------- 3.8. Text Color -------------------*/
+@use 'utilities/text-color';
+
+/*------------------- 3.9. Overlay -------------------*/
+@use 'utilities/overlay';
+
+/*------------------- 3.10. Animation -------------------*/
+@use 'utilities/animation';
+
+
+/*=================================
+    04. Template Style
+==================================*/
+/*------------------- 4.1. Widget  -------------------*/
+@use 'template/widgets/widget-default-list';
+@use 'template/widgets/widget-sidebar';
+@use 'template/widgets/widget-footer';
+
+/* ---------------- Scroll Cue Plugin --------------------*/
+@use 'scrollCue';
+
+
+/*------------------- 4.2. Header  -------------------*/
+@use 'template/headers/header';
+
+/*------------------- 4.3. Footer  -------------------*/
+@use 'template/footers/footer';
+
+/*------------------- 4.4. Breadcumb  -------------------*/
+@use 'template/breadcumb/breadcumb-v1';
+
+/*------------------- 4.5. Pagination  -------------------*/
+@use 'template/sections/pagination-v1';
+
+/*------------------- 4.6. Blog  -------------------*/
+@use 'template/sections/blog';
+
+/*------------------- 4.7. Comments  -------------------*/
+@use 'template/sections/comments';
+
+/*------------------- 4.8. Hero Area  -------------------*/
+@use 'template/sections/hero';
+
+/*------------------- 4.9. Error  -------------------*/
+@use 'template/sections/error';
+
+/*------------------- 4.00. Popup Search  -------------------*/
+@use 'template/sections/popupsearch-v1';
+
+/*------------------- 4.00. Popup Side Menu  -------------------*/
+@use 'template/sections/sidemenu-v1';
+
+/*------------------- 4.00. Wocommerce  -------------------*/
+@use 'template/sections/woocommerce';
+
+/*------------------- 4.00. Products  -------------------*/
+@use 'template/sections/products';
+
+/*------------------- 4.00. Cart  -------------------*/
+@use 'template/sections/cart';
+
+/*------------------- 4.00. Checkout  -------------------*/
+@use 'template/sections/checkout';
+
+/*------------------- 4.00. Wishlist  -------------------*/
+@use 'template/sections/wishlist';
+
+/*------------------- 4.00. Contact  -------------------*/
+@use 'template/sections/contact';
+
+/*------------------- 4.00. About  -------------------*/
+@use 'template/sections/about';
+
+/*------------------- 4.00. Team  -------------------*/
+@use 'template/sections/team';
+
+/*------------------- 4.00. Testimonial  -------------------*/
+@use 'template/sections/testimonial';
+
+/*------------------- 4.00. Counter  -------------------*/
+@use 'template/sections/counter';
+
+/*------------------- 4.00. Blog  -------------------*/
+@use 'template/sections/blog-extra';
+
+/*------------------- 4.00. Brand  -------------------*/
+@use 'template/sections/brand';
+
+/*------------------- 4.00. Booking  -------------------*/
+@use 'template/sections/booking';
+
+/*------------------- 4.00. Simple Sections  -------------------*/
+@use 'template/sections/simple-sections';
+
+/*------------------- 4.00. Why -------------------*/
+@use 'template/sections/why';
+
+/*------------------- 4.00. Faq -------------------*/
+@use 'template/sections/faq';
+
+/*------------------- 4.00. Service -------------------*/
+@use 'template/sections/service';
+
+/*------------------- 4.00. Process -------------------*/
+@use 'template/sections/process';
+
+/*------------------- 4.00. Pricing -------------------*/
+@use 'template/sections/pricing';
+
+/*------------------- 4.00. Feature -------------------*/
+@use 'template/sections/feature';
+
+/*------------------- 4.00. Project -------------------*/
+@use 'template/sections/project';
+
+/*------------------- 4.00. Category -------------------*/
+@use 'template/sections/category';
+
+/*------------------- 4.00. CTA -------------------*/
+@use 'template/sections/cta';
+
+/*------------------- 4.00. Color Scheme -------------------*/
+@use 'template/sections/color-scheme';
+
+/*------------------- 4.00. Appointment -------------------*/
+@use 'template/sections/appointment';
+
+/*------------------- 4.00. Video -------------------*/
+@use 'template/sections/video';
+
+/*------------------- 4.00. Client -------------------*/
+@use 'template/sections/client';
+
+/*------------------- 4.00. Tab Menu -------------------*/
+@use 'template/sections/tabmenu';
+
+/*------------------- 4.00. Marquee -------------------*/
+@use 'template/sections/marquee';
+
+/*------------------- 4.00. Class -------------------*/
+@use 'template/sections/class';
+
+/*------------------- 4.00. Gallery -------------------*/
+@use 'template/sections/gallery';
+
+/*------------------- 4.00. MegaMenu -------------------*/
+@use 'template/sections/megamenu';
+
+/*------------------- 4.00. Award -------------------*/
+@use 'template/sections/award';
+
+/*------------------- 4.00. Experience -------------------*/
+@use 'template/sections/experience';
+
+/*------------------- 4.00. Work -------------------*/
+@use 'template/sections/work';
+
+/*------------------- 4.00. Event -------------------*/
+@use 'template/sections/event';
+
+/*------------------- 4.00. Story -------------------*/
+@use 'template/sections/chatbot';
+
+/*------------------- 4.00. offer -------------------*/
+@use 'template/sections/offer';
+
+/*------------------- 4.00. calculation -------------------*/
+@use 'template/sections/calculation';
+
+/*=================================
+    05. Spacing
+==================================*/
+@use 'spacing/spacing';
+
+/*------------------- RTL -------------------*/
+// @import 'rtl';

@@ -86,6 +86,12 @@
 }
 </style>
 
+<!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+<!-- Calendly link widget end -->
+
 </head>
 
 <body class="">
@@ -318,7 +324,8 @@ Hero Area
                                         Request a Quote
                                         <span class="after-bg"></span>
                                     </a>
-                                    <a href="contact.html" class="th-btn style8">
+                                  
+                                    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/vjnvk123007/30min'});return false;" class="th-btn style8">
                                         Contact Us
                                         <span class="after-bg"></span>
                                     </a>
@@ -343,7 +350,8 @@ Hero Area
                                         Request a Quote
                                         <span class="after-bg"></span>
                                     </a>
-                                    <a href="contact.html" class="th-btn style8">
+                                    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/vjnvk123007/30min'});return false;" class="th-btn style8"></a>
+                                    <!-- <a href="contact.html" class="th-btn style8"> -->
                                         Contact Us
                                         <span class="after-bg"></span>
                                     </a>
@@ -3516,7 +3524,7 @@ Appointment Area
 window.addEventListener("scroll", function () {
   const box = document.getElementById("whatsappBox");
 
-  if (window.scrollY > 200) {
+  if (window.scrollY > 300) {
     box.classList.add("show");
   } else {
     box.classList.remove("show");

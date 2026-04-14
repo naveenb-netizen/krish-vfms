@@ -368,7 +368,7 @@ img:not([draggable]),
 embed,
 object,
 video {
-  max-width: 30%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -9518,7 +9518,7 @@ ol.wp-block-rss {
 .footer-widget.style2 .widget_title::before {
   content: "";
   position: absolute;
-  background-image: url(../img/icon/title-icon2.svg);
+  background-image: url(../img/icon/title-icon2.svgss);
   background-size: 100% 100%;
   width: 22px;
   height: 24px;
@@ -17613,7 +17613,8 @@ span.select2-selection.select2-selection--single:focus {
   align-items: center;
   justify-content: center;
   background: var(--white-color);
-  color: var(--theme-color);
+  /* color: var(--theme-color); */
+   color: #fdb52a;
   font-size: 24px;
   box-shadow: 0px 21px 47px rgba(15, 21, 31, 0.21);
   position: relative;
@@ -17669,6 +17670,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 .contact-info2 .box-text a:hover {
   color: var(--theme-color);
+   
 }
 .contact-info2 .box-text span {
   color: var(--theme-color3);
@@ -17677,7 +17679,7 @@ span.select2-selection.select2-selection--single:focus {
   text-transform: uppercase;
 }
 .contact-info2:hover .box-icon {
-  background: var(--theme-color);
+  background: #fdb52a;
   color: var(--white-color);
 }
 
@@ -26695,7 +26697,7 @@ span.select2-selection.select2-selection--single:focus {
   max-width: 1840px;
   margin: 0 auto;
   border-radius: 20px;
-  background: linear-gradient(90deg, rgba(21, 35, 58, 0) 0%, #215CBE 100%), #15233A;
+  background: linear-gradient(90deg, rgba(58, 47, 21, 0) 0%, #fdb52a 100%), #000000;
 }
 .appointment-wrap .shape-mockup {
   width: 251px;
@@ -29836,5 +29838,3 @@ Version: 1.0.0
   }
 }
 /*------------------- RTL -------------------*/
-
-/*# sourceMappingURL=style.css.map */

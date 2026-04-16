@@ -10,6 +10,7 @@
         $number = trim($_POST["number"]);
         $message = trim($_POST["message"]);
 
+
         // Check that data was sent to the mailer.
         if ( empty($name) OR empty($message) OR empty($number) OR empty($subject) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // Set a 400 (bad request) response code and exit.

@@ -175,7 +175,8 @@ button {
         <div class="preloader-inner">
             <div class="">
                 <!-- <img src="assets/img/logo-icon.svg" alt="img"> -->
-                 <img src="https://krishvglobalfms.com/public/assets/images/loader/loader.gif" alt="img" width="300px">
+                 <img src="../Logo-Loader.gif" alt="img" width="400px">
+                <!-- <img src="https://krishvglobalfms.com/public/assets/images/loader/loader.gif" alt="img" width="300px"> -->
             </div>
             <!-- <span class="loader">
                 Krish-v
@@ -215,13 +216,13 @@ button {
             </div>
         </div>
     </div>
-    <div class="popup-search-box d-none d-lg-block">
+    <!-- <div class="popup-search-box d-none d-lg-block">
         <button class="searchClose"><i class="far fa-times"></i></button>
         <form action="#">
             <input type="text" placeholder="What are you looking for?">
             <button type="submit"><i class="fal fa-search"></i></button>
         </form>
-    </div>
+    </div> -->
     <!-- <div class="color-scheme-wrap active">
         <button class="switchIcon"><i class="fa-solid fa-palette"></i></button>
         <h3 class="color-scheme-wrap-title text-center">Color Switcher</h3>
@@ -274,7 +275,7 @@ button {
                                 </a>
                             </div>
                         </div>
-                        <div class="col-auto">
+                        <div class="col-auto" style="margin-left: 100px;">
                             <nav class="main-menu d-none d-lg-inline-block">
                                 <ul>
                                     <li>
@@ -284,7 +285,7 @@ button {
                                     <li><a href="#about-sec">About Us</a></li>
                                     <li><a href="#service-sec">Our Services</a></li>
                                     <li><a href="#project-sec">On Demand Services</a></li>
-                                    <li><a href="#blog-sec">Blog</a></li>
+                                    <!-- <li><a href="#blog-sec">Blog</a></li> -->
                                     <li>
                                         <a href="#contact-sec">Contact Us</a>
                                     </li>
@@ -296,7 +297,7 @@ button {
                         </div>
                         <div class="col-auto d-none d-xxl-block">
                             <div class="header-button">
-                                <button type="button" class="icon-btn style6 searchBoxToggler"><i class="far fa-search"></i></button>
+                                <!-- <button type="button" class="icon-btn style6 searchBoxToggler"><i class="far fa-search"></i></button> -->
                                 <a href="tel:+16369729901" class="link-btn3">
                                     Request a Free Call
                                 </a>
@@ -317,7 +318,7 @@ Hero Area
     <div class="th-hero-wrapper hero-2" id="hero">
         <div class="swiper th-slider" id="heroSlider2" data-slider-options='{"effect":"fade", "autoHeight": "true"}'>
             <div class="swiper-wrapper">
-                <div class="swiper-slide" data-bg-src="assets/img/hero/hero_bg_1_1.jpg">
+                <div class="swiper-slide" data-bg-src="../images/Hero-33.jpg">
                     <div class="hero-inner">
                         <div class="container">
                             <div class="hero-style1">
@@ -327,7 +328,7 @@ Hero Area
                                 <h1 class="hero-title text-white">
                                     <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">Complete <span>Facility Management</span>Services in Bangalore</span>
                                 </h1>
-                                <p class="hero-text text-white" data-ani="slideinup" data-ani-delay="0.6s">Krish-V Global delivers reliable housekeeping, maintenance, and security services with trained professionals and fast response to keep your workplace clean, safe, and efficient.</p>
+                                <p class="hero-text text-white" data-ani="slideinup" data-ani-delay="0.6s">Krish-V Global delivers reliable housekeeping, maintenance, security services with trained professionals and fast response to keep your workplace clean, safe & efficient.</p>
                                 <div class="btn-group" data-ani="slideinup" data-ani-delay="0.7s">
                                     <a href="about.html" class="th-btn style7">
                                         Request a Quote
@@ -343,7 +344,7 @@ Hero Area
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide" data-bg-src="assets/img/hero/hero_bg_1_2.jpg">
+                <div class="swiper-slide" data-bg-src="../images/Hero-111.jpg">
                     <div class="hero-inner">
                         <div class="container">
                             <div class="hero-style1">
@@ -351,7 +352,7 @@ Hero Area
                                     <img src="assets/img/icon/title-icon3.svgs" alt="">
                                     Reliable Service You Can Trust</span>
                                 <h1 class="hero-title text-white">
-                                    <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">Professional <span>Housekeeping & Maintenance</span> Services</span>
+                                    <span class="title1" data-ani="slideinup" data-ani-delay="0.4s">Professional <span>Housekeeping &Maintenance</span>
                                 </h1>
                                 <p class="hero-text text-white" data-ani="slideinup" data-ani-delay="0.6s">From daily cleaning to electrical, plumbing, and AC maintenance, we provide end-to-end facility solutions designed to reduce costs and improve operational efficiency.</p>
                                 <div class="btn-group" data-ani="slideinup" data-ani-delay="0.7s">
@@ -441,7 +442,6 @@ booking from
                             <div class="booking-form-v1 ">
                                 <!-- <form action="mail.php" method="POST" class="contact-form ajax-contact"> -->
                                     <form id="contactForm" class="contact-form">
-                                        <input type="hidden" id="formType" value="form1">
                                     <div class="form-group-wrap ">
                                         <div class="form-group style3 ">
                                             <input type="text" class="form-control" name="name" id="name" placeholder="Enter your full name">
@@ -485,6 +485,7 @@ booking from
     <a href="https://wa.me/917583048304" class="btn-wa">WhatsApp</a>
   </div>
 </div>
+
 <script>
 document.getElementById("contactForm").addEventListener("submit", function(e){
     e.preventDefault();
@@ -492,57 +493,57 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
     let data = {
         name: document.getElementById("name").value,
         number: document.getElementById("number").value,
-        subject: document.getElementById("subject").value,
-        formType: "form1"
+        subject: document.getElementById("subject").value
     };
 
-    sendData(data);
-});
-       
-</script>
+    // Validation
+    if(!data.name || !data.number || !data.subject){
+        alert("Please fill all fields");
+        return;
+    }
 
+    if(data.number.length !== 10){
+        alert("Enter valid 10-digit phone number");
+        return;
+    }
 
-<script>
-    document.getElementById("contactForm2").addEventListener("submit", function(e){
-    e.preventDefault();
+    // Show Loader
+    document.getElementById("loader").style.display = "block";
 
-    let data = {
-        name: document.getElementById("name1").value,
-        number: document.getElementById("number1").value,
-        subject: document.getElementById("subject2").value,
-        formType: "form2"
-    };
-
-    sendData(data);
-});
-</script>
-
-<script>
-    function sendData(data) {
-
-    fetch("https://script.google.com/macros/s/AKfycbx1tIFnC4jSXu3F8WZPRkeudmDTPfSydPYDFwX5r5BEH7HzpJ8u6zKpDt0yUeaRo2E/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbzQd4n_e0T-X3fEHs2WHb0vWesW8YNzjdTvjMAKOv17JV504voD-6OkpNKeUTb4G7UO/exec", {
         method: "POST",
-        mode: "no-cors",
+            mode: "no-cors", // 🔥 IMPORTANT
         body: JSON.stringify(data)
     })
-    .then(() => {
-        alert("✅ Submitted Successfully");
-    })
-    .catch(() => {
-        alert("❌ Error");
-    });
-}
+    // .then(res => res.json())
+.then(res => res.text())
+.then(() => {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("contactForm").style.display = "none";
+    document.getElementById("thankYouBox").style.display = "block";
+
+        // ⏱ Auto close after 30 seconds
+    setTimeout(() => {
+        document.getElementById("thankYouBox").style.display = "none";
+        document.getElementById("contactForm").style.display = "block";
+    }, 10000); // 30000ms = 30 sec
+
+})
+.catch(err => {
+    document.getElementById("loader").style.display = "none";
+    alert("Something went wrong, but data may be submitted!");
+});
+});
 </script>
 
-<div class="tab-pane fade" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab">
+
+                    <div class="tab-pane fade" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab">
                         <div class="row gy-30 justify-content-center">
                             <!--==============================
 booking from 
 ==============================-->
                             <div class="booking-form-v1 ">
-                                <!-- <form action="mail.php" method="POST" class="contact-form ajax-contact"> -->
-                                    <form id="contactForm2" class="contact-form">
-                                    <input type="hidden" id="formType2" value="form2"> 
+                                <form action="mail.php" method="POST" class="contact-form ajax-contact">
                                     <div class="form-group-wrap ">
                                         <div class="form-group style3 ">
                                             <input type="text" class="form-control" name="name" id="name1" placeholder="Enter your full name">
@@ -614,7 +615,7 @@ Service Area
                 <div class="service-list-wrap">
                     <div class="service-card2 " data-cue="slideInUp">
                         <div class="box-img">
-                            <img src="assets/img/service/service_card_2_1.jpg" alt="img">
+                            <img src="../images/504x294-1.jpg" alt="img">
                         </div>
                         <div class="box-content">
                             <div class="box-icon ">
@@ -630,7 +631,7 @@ Service Area
                     </div>
                     <div class="service-card2 " data-cue="slideInUp">
                         <div class="box-img">
-                            <img src="assets/img/service/service_card_2_2.jpg" alt="img">
+                            <img src="../images/290x254 - Resedential-1.jpg" alt="img">
                         </div>
                         <div class="box-content">
                             <div class="box-icon ">
@@ -646,7 +647,7 @@ Service Area
                     </div>
                     <div class="service-card2 " data-cue="slideInUp">
                         <div class="box-img">
-                            <img src="assets/img/service/service_card_2_3.jpg" alt="img">
+                            <img src="../images/290x254 - Industrial.jpg" alt="img">
                         </div>
                         <div class="box-content">
                             <div class="box-icon ">
@@ -693,12 +694,12 @@ Project Area
 
             <!-- Tabs -->
             <div class="nav tab-menu3 mb-40" id="tab-menu3" role="tablist">
-                <button class="th-btn tab-btn active" id="first-nav-one-tab" data-bs-toggle="tab" data-bs-target="#first-nav-one" type="button" role="tab" aria-controls="first-nav-one" aria-selected="true">View All</button>
-                <button class="th-btn tab-btn" id="sec-nav-two-tab" data-bs-toggle="tab" data-bs-target="#sec-nav-two" type="button" role="tab" aria-controls="sec-nav-two" aria-selected="false">Facility management Services</button>
-                <button class="th-btn tab-btn" id="nav-three-tab" data-bs-toggle="tab" data-bs-target="#nav-three" type="button" role="tab" aria-controls="nav-three" aria-selected="false">On Demand Services</button>
+                <!-- <button class="th-btn tab-btn active" id="first-nav-one-tab" data-bs-toggle="tab" data-bs-target="#first-nav-one" type="button" role="tab" aria-controls="first-nav-one" aria-selected="true">Facility management Services</button> -->
+                <!-- <button class="th-btn tab-btn" id="sec-nav-two-tab" data-bs-toggle="tab" data-bs-target="#sec-nav-two" type="button" role="tab" aria-controls="sec-nav-two" aria-selected="false">Facility management Services</button> -->
+                <!-- <button class="th-btn tab-btn" id="nav-three-tab" data-bs-toggle="tab" data-bs-target="#nav-three" type="button" role="tab" aria-controls="nav-three" aria-selected="false">On Demand Services</button>
                 <button class="th-btn tab-btn" id="nav-four-tab" data-bs-toggle="tab" data-bs-target="#nav-four" type="button" role="tab" aria-controls="nav-four" aria-selected="false">Laundry Services</button>
                 <button class="th-btn tab-btn" id="nav-five-tab" data-bs-toggle="tab" data-bs-target="#nav-five" type="button" role="tab" aria-controls="nav-five" aria-selected="false">Interior Services</button>
-                <button class="th-btn tab-btn" id="nav-six-tab" data-bs-toggle="tab" data-bs-target="#nav-six" type="button" role="tab" aria-controls="nav-six" aria-selected="false">Property management services</button>
+                <button class="th-btn tab-btn" id="nav-six-tab" data-bs-toggle="tab" data-bs-target="#nav-six" type="button" role="tab" aria-controls="nav-six" aria-selected="false">Property management services</button> -->
             </div>
 
             <!-- Tab Content -->
@@ -819,7 +820,7 @@ Project Area
                                 <div class="swiper-slide">
                                     <div class="project-card style2">
                                         <div class="box-img">
-                                            <img class="mein-img" src="assets/img/project/project2-2.jpg" alt="img">
+                                            <img class="mein-img" src="../images/services/312x541 - Pool Maintenance.jpg" alt="img">
                                             <a href="assets/img/project/project2-2.jpg" class="popup-image">
                                                 <img src="assets/img/icon/popup-icon.svg" alt="">
                                             </a>
@@ -838,7 +839,7 @@ Project Area
                                 <div class="swiper-slide">
                                     <div class="project-card style2">
                                         <div class="box-img">
-                                            <img class="mein-img" src="assets/img/project/project2-3.jpg" alt="img">
+                                            <img class="mein-img" src="../images/services/312x541 - Landscaping.jpg" alt="img">
                                             <a href="assets/img/project/project2-3.jpg" class="popup-image">
                                                 <img src="assets/img/icon/popup-icon.svg" alt="">
                                             </a>
@@ -857,7 +858,7 @@ Project Area
                                 <div class="swiper-slide">
                                     <div class="project-card style2">
                                         <div class="box-img">
-                                            <img class="mein-img" src="assets/img/project/project2-4.jpg" alt="img">
+                                            <img class="mein-img" src="../images/services/312x541 - Sump clean.jpg" alt="img">
                                             <a href="assets/img/project/project2-4.jpg" class="popup-image">
                                                 <img src="assets/img/icon/popup-icon.svg" alt="">
                                             </a>
@@ -876,7 +877,7 @@ Project Area
                                 <div class="swiper-slide">
                                     <div class="project-card style2">
                                         <div class="box-img">
-                                            <img class="mein-img" src="assets/img/project/project2-1.jpg" alt="img">
+                                            <img class="mein-img" src="../images/services/312x541 - DG Maintenance.jpg" alt="img">
                                             <a href="assets/img/project/project2-1.jpg" class="popup-image">
                                                 <img src="assets/img/icon/popup-icon.svg" alt="">
                                             </a>
@@ -914,7 +915,7 @@ Project Area
                                 <div class="swiper-slide">
                                     <div class="project-card style2">
                                         <div class="box-img">
-                                            <img class="mein-img" src="assets/img/project/project2-3.jpg" alt="img">
+                                            <img class="mein-img" src="../images/services/312x541 - Fire & Safety.jpg" alt="img">
                                             <a href="assets/img/project/project2-3.jpg" class="popup-image">
                                                 <img src="assets/img/icon/popup-icon.svg" alt="">
                                             </a>
@@ -956,7 +957,7 @@ Project Area
                                   <div class="swiper-slide">
                                     <div class="project-card style2">
                                         <div class="box-img">
-                                            <img class="mein-img" src="assets/img/project/project2-1.jpg" alt="img">
+                                            <img class="mein-img" src="../images/services/312x541 - Security service.jpg" alt="img">
                                             <a href="assets/img/project/project2-1.jpg" class="popup-image">
                                                 <img src="assets/img/icon/popup-icon.svg" alt="">
                                             </a>
@@ -975,7 +976,7 @@ Project Area
                                 <div class="swiper-slide">
                                     <div class="project-card style2">
                                         <div class="box-img">
-                                            <img class="mein-img" src="assets/img/project/project2-2.jpg" alt="img">
+                                            <img class="mein-img" src="../images/services/312x541 - house keeping.jpg" alt="img">
                                             <a href="assets/img/project/project2-2.jpg" class="popup-image">
                                                 <img src="assets/img/icon/popup-icon.svg" alt="">
                                             </a>
@@ -994,7 +995,7 @@ Project Area
                                 <div class="swiper-slide">
                                     <div class="project-card style2">
                                         <div class="box-img">
-                                            <img class="mein-img" src="assets/img/project/project2-3.jpg" alt="img">
+                                            <img class="mein-img" src="../images/services/312x541 - MEP.jpg" alt="img">
                                             <a href="assets/img/project/project2-3.jpg" class="popup-image">
                                                 <img src="assets/img/icon/popup-icon.svg" alt="">
                                             </a>
@@ -1013,7 +1014,7 @@ Project Area
                                 <div class="swiper-slide">
                                     <div class="project-card style2">
                                         <div class="box-img">
-                                            <img class="mein-img" src="assets/img/project/project2-4.jpg" alt="img">
+                                            <img class="mein-img" src="../images/services/312x541 - Pest control.jpg" alt="img">
                                             <a href="assets/img/project/project2-4.jpg" class="popup-image">
                                                 <img src="assets/img/icon/popup-icon.svg" alt="">
                                             </a>
@@ -1051,8 +1052,8 @@ Project Area
                                 <div class="swiper-slide">
                                     <div class="project-card style2">
                                         <div class="box-img">
-                                            <img class="mein-img" src="assets/img/project/project2-2.jpg" alt="img">
-                                            <a href="assets/img/project/project2-2.jpg" class="popup-image">
+                                            <img class="mein-img" src="../images/services/312x541 - Pool Maintenance.jpg" alt="img">
+                                            <a href="../images/services/312x541 - Pool Maintenance.jpg" class="popup-image">
                                                 <img src="assets/img/icon/popup-icon.svg" alt="">
                                             </a>
                                         </div>
@@ -1070,8 +1071,8 @@ Project Area
                                 <div class="swiper-slide">
                                     <div class="project-card style2">
                                         <div class="box-img">
-                                            <img class="mein-img" src="assets/img/project/project2-3.jpg" alt="img">
-                                            <a href="assets/img/project/project2-3.jpg" class="popup-image">
+                                            <img class="mein-img" src="../images/services/312x541 - Landscaping.jpg" alt="img">
+                                            <a href="../images/services/312x541 - Landscaping.jpg" class="popup-image">
                                                 <img src="assets/img/icon/popup-icon.svg" alt="">
                                             </a>
                                         </div>
@@ -1089,8 +1090,8 @@ Project Area
                                 <div class="swiper-slide">
                                     <div class="project-card style2">
                                         <div class="box-img">
-                                            <img class="mein-img" src="assets/img/project/project2-4.jpg" alt="img">
-                                            <a href="assets/img/project/project2-4.jpg" class="popup-image">
+                                            <img class="mein-img" src="../images/services/312x541 - Sump clean.jpg" alt="img">
+                                            <a href="../images/services/312x541 - Sump clean.jpg" class="popup-image">
                                                 <img src="assets/img/icon/popup-icon.svg" alt="">
                                             </a>
                                         </div>
@@ -1108,8 +1109,8 @@ Project Area
                                 <div class="swiper-slide">
                                     <div class="project-card style2">
                                         <div class="box-img">
-                                            <img class="mein-img" src="assets/img/project/project2-1.jpg" alt="img">
-                                            <a href="assets/img/project/project2-1.jpg" class="popup-image">
+                                            <img class="mein-img" src="../images/services/312x541 - DG Maintenance.jpg" alt="img">
+                                            <a href="../images/services/312x541 - DG Maintenance.jpg" class="popup-image">
                                                 <img src="assets/img/icon/popup-icon.svg" alt="">
                                             </a>
                                         </div>
@@ -1146,8 +1147,8 @@ Project Area
                                 <div class="swiper-slide">
                                     <div class="project-card style2">
                                         <div class="box-img">
-                                            <img class="mein-img" src="assets/img/project/project2-3.jpg" alt="img">
-                                            <a href="assets/img/project/project2-3.jpg" class="popup-image">
+                                            <img class="mein-img" src="../images/services/312x541 - Fire & Safety.jpg" alt="img">
+                                            <a href="../images/services/312x541 - Fire & Safety.jpg" class="popup-image">
                                                 <img src="assets/img/icon/popup-icon.svg" alt="">
                                             </a>
                                         </div>
@@ -2081,6 +2082,422 @@ Project Area
     </section>
     <!--==============================
 
+    Service Area 1 
+==============================-->
+    <section class="service-area-3 space overflow-hidden" id="service-sec">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7">
+                    <div class="title-area text-center mb-60">
+                        <span class="sub-title2 style2 border-black-color8" data-cue="slideInUp">On Demand Services</span>
+                        <h2 class="sec-title style5 text-anim2 " data-cue="slideInUp">
+                            We provide solutions for renovating
+                            homes repairing
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-area service-slider3">
+                <div class="swiper th-slider" id="serviceSlider3" data-slider-options='{"autoHeight":true,"breakpoints":{"0":{"slidesPerView":1},"767":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"},"1300":{"slidesPerView":"4"},"1600":{"slidesPerView":"4"}}}'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="service-card3">
+                                <div class="box-thumb">
+                                    <img src="assets/img/service/service_card_3_1.jpg" alt="img">
+                                    <div class="box-icon">
+                                        <img src="assets/img/icon/service/service_icon_3_1.svg" alt="Icon">
+                                    </div>
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="box-title"><a href="service.html">Leak Detection & Repair</a></h3>
+                                    <p class="box-text">Water leaks can silently damage your walls, floors, and foundation leading to costly.</p>
+                                    <a class="th-btn style15" href="service-details.html">get a Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card3">
+                                <div class="box-thumb">
+                                    <img src="assets/img/service/service_card_3_2.jpg" alt="img">
+                                    <div class="box-icon">
+                                        <img src="assets/img/icon/service/service_icon_3_2.svg" alt="Icon">
+                                    </div>
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="box-title"><a href="service.html">Pipe Installation</a></h3>
+                                    <p class="box-text">Water leaks can silently damage your walls, floors, and foundation leading to costly.</p>
+                                    <a class="th-btn style15" href="service-details.html">get a Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card3">
+                                <div class="box-thumb">
+                                    <img src="assets/img/service/service_card_3_3.jpg" alt="img">
+                                    <div class="box-icon">
+                                        <img src="assets/img/icon/service/service_icon_3_3.svg" alt="Icon">
+                                    </div>
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="box-title"><a href="service.html">Water Heater Services</a></h3>
+                                    <p class="box-text">Water leaks can silently damage your walls, floors, and foundation leading to costly.</p>
+                                    <a class="th-btn style15" href="service-details.html">get a Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card3">
+                                <div class="box-thumb">
+                                    <img src="assets/img/service/service_card_3_4.jpg" alt="img">
+                                    <div class="box-icon">
+                                        <img src="assets/img/icon/service/service_icon_3_4.svg" alt="Icon">
+                                    </div>
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="box-title"><a href="service.html">Water Line Repair</a></h3>
+                                    <p class="box-text">Water leaks can silently damage your walls, floors, and foundation leading to costly.</p>
+                                    <a class="th-btn style15" href="service-details.html">get a Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card3">
+                                <div class="box-thumb">
+                                    <img src="assets/img/service/service_card_3_1.jpg" alt="img">
+                                    <div class="box-icon">
+                                        <img src="assets/img/icon/service/service_icon_3_1.svg" alt="Icon">
+                                    </div>
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="box-title"><a href="service.html">Leak Detection & Repair</a></h3>
+                                    <p class="box-text">Water leaks can silently damage your walls, floors, and foundation leading to costly.</p>
+                                    <a class="th-btn style15" href="service-details.html">get a Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card3">
+                                <div class="box-thumb">
+                                    <img src="assets/img/service/service_card_3_2.jpg" alt="img">
+                                    <div class="box-icon">
+                                        <img src="assets/img/icon/service/service_icon_3_2.svg" alt="Icon">
+                                    </div>
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="box-title"><a href="service.html">Pipe Installation</a></h3>
+                                    <p class="box-text">Water leaks can silently damage your walls, floors, and foundation leading to costly.</p>
+                                    <a class="th-btn style15" href="service-details.html">get a Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card3">
+                                <div class="box-thumb">
+                                    <img src="assets/img/service/service_card_3_3.jpg" alt="img">
+                                    <div class="box-icon">
+                                        <img src="assets/img/icon/service/service_icon_3_3.svg" alt="Icon">
+                                    </div>
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="box-title"><a href="service.html">Water Heater Services</a></h3>
+                                    <p class="box-text">Water leaks can silently damage your walls, floors, and foundation leading to costly.</p>
+                                    <a class="th-btn style15" href="service-details.html">get a Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card3">
+                                <div class="box-thumb">
+                                    <img src="assets/img/service/service_card_3_4.jpg" alt="img">
+                                    <div class="box-icon">
+                                        <img src="assets/img/icon/service/service_icon_3_4.svg" alt="Icon">
+                                    </div>
+                                </div>
+                                <div class="box-content">
+                                    <h3 class="box-title"><a href="service.html">Water Line Repair</a></h3>
+                                    <p class="box-text">Water leaks can silently damage your walls, floors, and foundation leading to costly.</p>
+                                    <a class="th-btn style15" href="service-details.html">get a Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button data-slider-prev="#serviceSlider3" class="slider-arrow style-border4 slider-prev"><i class="fa-solid fa-angle-left"></i></button>
+                <button data-slider-next="#serviceSlider3" class="slider-arrow style-border4 slider-next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+
+    Feature Area  -Other services
+==============================-->
+    <!-- <section class="why-sec3 space overflow-hidden position-relative z-index-2" data-bg-src="assets/img/bg/why-bg-3-1.jpg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="title-area text-center mb-60">
+                        <span class="sub-title2 style2 text-bg-white" data-cue="slideInUp">Other Services</span>
+                        <h2 class="sec-title style5 text-anim2 text-white" data-cue="slideInUp">
+                            Here’s What We Can Do for You
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="brand-wrap1">
+                <div class="swiper th-slider" data-cue="slideInUp" id="brandSlider" data-slider-options='{"breakpoints":{"0":{"slidesPerView":"auto"}},
+                "autoplay":{"delay":0,"disableOnInteraction":false},"noSwiping":"true","speed":8000,"spaceBetween":24}'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-1.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title"><a href="#">Interior Services</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-2.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">24/7 Emergency Services</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-3.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Upfront & Transparent Pricing</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-4.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Same-Day Service Available</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-1.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Licensed & Insured Professionals</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-2.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">24/7 Emergency Services</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-3.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Upfront & Transparent Pricing</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-4.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Same-Day Service Available</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-1.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Licensed & Insured Professionals</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-2.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">24/7 Emergency Services</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-3.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Upfront & Transparent Pricing</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-4.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Same-Day Service Available</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-1.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Licensed & Insured Professionals</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-2.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">24/7 Emergency Services</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-3.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Upfront & Transparent Pricing</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-4.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Same-Day Service Available</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-1.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Licensed & Insured Professionals</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-2.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">24/7 Emergency Services</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-3.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Upfront & Transparent Pricing</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-4.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Same-Day Service Available</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-1.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Licensed & Insured Professionals</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-2.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">24/7 Emergency Services</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-3.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Upfront & Transparent Pricing</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="why-feature-card2">
+                                <div class="box-icon">
+                                    <img src="assets/img/icon/feature/why-3-4.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="box-title">Same-Day Service Available</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     -->
+    <!--==============================
+
+
     Marquee Area  
 ==============================-->
     <div class="overflow-hidden" data-cue="slideInUp">
@@ -2338,14 +2755,14 @@ About Area
                                         <img class="w-100" src="assets/img/normal/about-thumb2-1.jpg" alt="About">
                                     </div>
                                     <div class="thumb-text">
-                                        <h2 class="box-number"><span class="counter-number">12</span>
+                                        <h2 class="box-number"><span class="counter-number">06</span>
                                             <span class="counter-marker">+</span>
                                         </h2>
                                         <h3> years Experience</h3>
                                         <div class="shape">
                                             <img src="assets/img/shape/about-arrow-shape.png" alt="">
                                         </div>
-                                        <h4>Since 1999</h4>
+                                        <h4>Since </h4>
                                     </div>
                                 </div>
                             </div>
@@ -3486,7 +3903,7 @@ Appointment Area
                         <div class="widget footer-widget style2">
                             <div class="th-widget-about style2">
                                 <div class="about-logo">
-                                    <a href="index.html"><img src="krish-v-logo-w.png" style="margin-bottom: -30px;"
+                                    <a href="index.html"><img src="krish-v-logo-w.png" style="margin-bottom: -30px; margin-top: -60px;"
  alt="Krish-V Global FMS"></a>
                                 </div>
                                 <p class="about-text">Krish-V Global Facility Management Services offers reliable and cost-effective solutions in Bengaluru for all types of facilities.
@@ -3503,22 +3920,22 @@ We ensure quality, safety, and 24/7 support with expert service. “Your facilit
                     </div>
                     <div class="col-sm-6 col-xl-auto" data-cue="slideInUp">
                         <div class="widget widget_nav_menu footer-widget style2">
-                            <h3 class="widget_title">Useful Links</h3>
+                            <!-- <h3 class="widget_title">Useful Links</h3> -->
                             <div class="menu-all-pages-container">
                                 <ul class="menu">
                                     <li><a href="index.html"><i class="fa-solid fa-angle-right"></i>Home</a></li>
                                     <li><a href="about.html"><i class="fa-solid fa-angle-right"></i>About Us</a></li>
-                                    <li><a href="pricing.html"><i class="fa-solid fa-angle-right"></i>Pricing Plan</a></li>
-                                    <li><a href="project.html"><i class="fa-solid fa-angle-right"></i>Our Gallery</a></li>
-                                    <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i>Our Location</a></li>
-                                    <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Blog</a></li>
+                                    <li><a href="pricing.html"><i class="fa-solid fa-angle-right"></i>Our Services</a></li>
+                                    <li><a href="project.html"><i class="fa-solid fa-angle-right"></i>On Demand services</a></li>
+                                    <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i>Blog</a></li>
+                                    <li><a href="blog.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
                                 </ul>
                             </div>  
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-auto" data-cue="slideInUp">
                         <div class="widget widget_nav_menu footer-widget style2">
-                            <h3 class="widget_title">Our Services</h3>
+                            <!-- <h3 class="widget_title">Our Services</h3> -->
                             <div class="menu-all-pages-container">
                                 <ul class="menu"> 
                                     <a href="" class="text-white"><i class="fa-solid fal fa-phone"></i>+91 75 8304 8304</a><br>
@@ -3536,7 +3953,7 @@ We ensure quality, safety, and 24/7 support with expert service. “Your facilit
                     </div>
                     <div class="col-md-6 col-xl-3" data-cue="slideInUp">
                         <div class="widget th-newsletter-widget  footer-widget style2">
-                            <h3 class="widget_title">Newsletter</h3>
+                            <!-- <h3 class="widget_title">Newsletter</h3> -->
                         <img src="https://krishvglobalfms.com/public/assets/images/icon/google-play-icon.png" style="max-width: 60%;" alt="Krish-V Global" width="350px;" ><br> <br>
 
                         <img src="https://krishvglobalfms.com/public/assets/images/icon/app-store-icon.png" style="max-width: 60%;" alt="Krish-V Global" width="350px;"><br> <br>

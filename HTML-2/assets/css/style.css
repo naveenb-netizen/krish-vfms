@@ -4071,8 +4071,10 @@ Version: 1.0.0
 .th-btn.style15 {
   border-radius: 7px;
   padding: 19px 30px;
-  background: var(--theme-color);
-  color: var(--white-color);
+  /* background: var(--theme-color); */
+  background: #fdb52a;
+  color: var(--black-color);
+
 }
 .th-btn.style15::before {
   display: none;
@@ -23546,7 +23548,8 @@ span.select2-selection.select2-selection--single:focus {
 .service-card3 .box-icon {
   width: 83px;
   height: 80px;
-  background: var(--theme-color3);
+  /* background: var(--theme-color3); */
+  background: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23566,7 +23569,8 @@ span.select2-selection.select2-selection--single:focus {
   height: 14px;
   bottom: 0;
   right: -14px;
-  background: var(--error-color2);
+  /* background: var(--error-color2); */
+  background: #000000;
   z-index: -1;
   clip-path: polygon(0 0, 0% 100%, 100% 0);
 }

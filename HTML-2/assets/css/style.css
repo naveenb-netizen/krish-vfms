@@ -86,7 +86,8 @@ Version: 1.0.0
 ==================================*/
 /*------------------- 1.1. Mixin -------------------*/
 :root {
-  --theme-color: #0052DA;
+  /* --theme-color: #0052DA; */
+   --theme-color: #815501;
   --theme-color2: #FDB52A;
   --theme-color3: #F02801;
   --title-color: #010916;
